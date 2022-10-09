@@ -127,13 +127,13 @@ const productos = [
     }, 
 ]
 // Hacemos contacto mediante el metodo de JS getElementById
-const producto = document.getElementById("resultado")
+let product = document.getElementById("resultado")
 // Declaramos una arrow function o tambien conocida como funcion flecha
 const catalogo = () => {
 
     // Las comillas invertidas se llaman backtiks o tambien conocidas como template string o string literal, dentro de estas mismas podemos introducir de manera dinamica codigo HTML5 dentro de JS
     for(let producto of productos){
-        producto.innerHTML += 
+        product.innerHTML += 
         `
         <div class="card" style="width: 18rem;" id="resultado">
             <img src="${producto.imagen}" alt="Imagen Random">
@@ -145,6 +145,24 @@ const catalogo = () => {
         </div>
         `
     }
-
-
 }
+catalogo()
+
+// function recorrerArreglo(arreglo){
+//     for(indice in arreglo){
+//         console.log(arreglo[indice], " prueba ")
+//         product.innerHTML += 
+//         `
+//         <div class="card" style="width: 18rem;" id="resultado">
+//             <img src="${arreglo[indice].imagen}" alt="Imagen Random">
+//             <div class="card-body">
+//                 <h5 class="card-title">Nombre: ${arreglo[indice].nombre}</h5>
+//                 <h5 class="card-title">Destino: ${arreglo[indice].destino}</h5>
+//                 <p class="card-text">Valor: ${arreglo[indice].valor}</p>
+//             </div>
+//         </div>
+//         `
+//     }
+// }
+
+// recorrerArreglo(productos)

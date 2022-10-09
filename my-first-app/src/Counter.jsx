@@ -3,11 +3,18 @@ import React, {useState} from 'react';
 import './counter.css';
 
 export const Counter = ( {title} ) =>{
-
+    // estado del componente, hook useState
+    // hook es una manera en la que le damos vida a nuestro componente
+    // destructuracion de array
     const [counter, setCounter] = useState(0); 
 
     const incrementarContador = () =>{
-        setCounter(counter + 1)
+        if(counter<30){
+            setCounter(counter + 1)
+        }
+        else{
+            alert("No se puede sumar mas de 30")
+        }
     }
 
     const decrementarContador = () =>{

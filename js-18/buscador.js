@@ -1,4 +1,5 @@
-const resultado = document.querySelector('#resultado')
+//const resultado = document.querySelector('#resultado')
+const resultado = document.getElementById('resultado')
 
 const formulario = document.querySelector('#formulario')
 
@@ -31,5 +32,3 @@ const filtrar = () =>{
 }
 
 formulario.addEventListener('keyup', filtrar)
-
-filtrar()

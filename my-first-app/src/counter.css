@@ -1,5 +1,26 @@
 button{
-    margin: 3px;
+    margin: 10px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
 }
+
+/* Primero en consola:
+1) Verificar que npm este instalado
+npm --version
+2) Creamos la app de react usando npm 
+npx create-react-app nombreCarpeta
+3) Iniciar la aplicacion
+npm start
+4) Crear un componente Nombredelarchivo.jsx , primera letra en mayuscula
+5) Dentro del nuevo archivo import React from 'react';
+6) Importar tambien el css './nombredelarchivo.css';
+7) export const Nombredelarchivo = ( ) =>{return()}
+en esta parte devolvemos HTML mezclado con JS , es decis JSX javascript extension
+8) Luego dentro del padre llamamos al hijo, primero importamos:
+import { Counter } from './Counter.jsx';
+Luego lo usamos:
+<Counter />
+*/
